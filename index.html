@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login JS</title>
+
+
+    <ul>
+       <li>
+    <a href="https://656389f7d640291dbc81ab8c--vermillion-pasca-8de540.netlify.app/"> sobre nos</a>
+        </li>
+    </ul>
+
+    
+    <style>
+
+    </style>
+
+</head>
+<body>
+    
+
+    <form>
+        <div class="container">
+
+        <h1>seja bem vindo a hard point</h1>
+
+        <div class="login">
+            <input type="text" placeholder="Login" id="login">
+        </div>
+
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+        </div>
+
+
+    </form>
+
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "victor" && senha == "server1"){
+                alert('Sucesso');
+                location.href = "hard.html";
+                alert('Usuario ou senha incorretos');
+            }
+
+        } 
+        
+    
+    </script>
+</body>
+</html>
